@@ -22,7 +22,7 @@ koperasi-app/
 2. Install dependencies: composer install
 3. konfigurasi postgres
 
-file .env
+Konfigurasi PostgreSQL di file .env:
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
@@ -33,7 +33,7 @@ DB_PASSWORD=1234
 
 5. generate app key -> php artisan key:generate
 6. menjalankan migrasi -> php artisan migrate
-7. server laravel -> php artisan serve
+7. server laravel -> php artisan serve : Default: http://127.0.0.1:8000
 
 
 ## DUMMY DATA YANG DIPAKAI (POSTGRES)
@@ -43,6 +43,10 @@ buka terminal -> masukkan perintah berikut.
 pg_dump -U postgres -d koperasi_db -F c -b -v -f koperasi_db.backup
 
 ## Hasilnya: file koperasi_db.backup akan tersimpan di folder saat anda menjalankan perintah itu.
+
+## Import database (kalau pakai file backup):
+pg_restore -U postgres -d koperasi_db -v koperasi_db.backup
+
 
 
 # SETUP FRONTEND 
@@ -70,3 +74,8 @@ npm install
 
 ## jalankan project 
 npm start
+
+## Catatan Tambahan
+Pastikan PostgreSQL sudah berjalan sebelum migrate Laravel.
+Jika ada error migrasi, cek koneksi .env dan pastikan database koperasi_db sudah dibuat.
+Untuk login/logout dan API call, backend menggunakan Laravel Sanctum (jika sudah setup).
