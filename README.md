@@ -38,10 +38,11 @@ DB_PASSWORD=1234
 
 ## DUMMY DATA YANG DIPAKAI (POSTGRES)
 export database PostgreSQL ke file SQL
-buka terminal -> masukkan perintah berikut
+buka terminal -> masukkan perintah berikut.
+
 pg_dump -U postgres -d koperasi_db -F c -b -v -f koperasi_db.backup
 
-Hasilnya: file koperasi_db.backup akan tersimpan di folder saat anda menjalankan perintah itu.
+## Hasilnya: file koperasi_db.backup akan tersimpan di folder saat anda menjalankan perintah itu.
 
 
 # SETUP FRONTEND 
