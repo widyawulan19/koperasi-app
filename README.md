@@ -79,3 +79,11 @@ npm start
 Pastikan PostgreSQL sudah berjalan sebelum migrate Laravel.
 Jika ada error migrasi, cek koneksi .env dan pastikan database koperasi_db sudah dibuat.
 Untuk login/logout dan API call, backend menggunakan Laravel Sanctum (jika sudah setup).
+
+## akses login 
+1. admin
+   - email : admin@koperasi.com
+   - pass: password
+3. karyawan
+   - email : budi@koperasi.com
+   - pass : password
