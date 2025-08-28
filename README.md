@@ -48,12 +48,12 @@ Hasilnya: file koperasi_db.backup akan tersimpan di folder saat anda menjalankan
 
 ## dependency yang harus ada
 Package	
-react	-> Core library React
-react-dom	 -> Rendering React ke DOM
-react-router-dom	-> Routing SPA React
-axios	 -> HTTP client untuk API calls
-react-icons ->	Paket ikon siap pakai
-web-vitals	-> Monitoring performa aplikasi
+1. react	-> Core library React
+2. react-dom	 -> Rendering React ke DOM
+3. react-router-dom	-> Routing SPA React
+4. axios	 -> HTTP client untuk API calls
+5. react-icons ->	Paket ikon siap pakai
+6. web-vitals	-> Monitoring performa aplikasi
 @testing-library/react, @testing-library/dom, @testing-library/jest-dom, @testing-library/user-event
 
 ## DEV DEPENDENCY 
